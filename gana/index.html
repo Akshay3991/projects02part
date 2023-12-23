@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana - Your favourite music is here</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<style type="text/css">
+    @layer utilities {
+
+        /* Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    }
+</style>
+
+<body class="no-scrollbar">
+    <nav class="sticky top-[0px] w-[100vw] bg-[#1F2024] h-[4vh] grid grid-cols-2 ">
+        <div class="flex pt-[18px] pl-[45px]">
+            <b>
+                <svg width="28" height="28" viewBox="0 0 24 24">
+                    <path class="svg_color" fill="white" fill-rule="nonzero"
+                        d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"></path>
+                </svg>
+            </b>
+            <b class="pl-[20px] pt-[3px]">
+                <svg width="89" height="28" viewBox="0 0 87 22">
+                    <g fill="" fill-rule="evenodd">
+                        <path class="svg_color_brand" fill="#e72c30"
+                            d="M57.998 12.982c.122-.678.23-1.313.347-1.95.383-2.159.767-4.317 1.138-6.476.11-.625-.28-1.074-.925-1.104-.414-.018-.834-.012-1.248-.012-.864.006-1.436.51-1.583 1.35-.462 2.65-.937 5.301-1.411 7.946-.019.09-.129.234-.196.234-1.186-.018-2.368-.03-3.549-.108-.767-.048-1.382-.432-1.814-1.068-.024-.03-.055-.053-.097-.102-.165.175-.317.342-.48.498-.543.534-1.17.852-1.955.792-.554-.042-1.12 0-1.662-.096-.968-.174-1.759-.648-2.234-1.59-.073.324-.152.642-.225.966-.165.774-.158.768-.962.732-.572-.024-1.144-.102-1.638-.396-.377-.228-.7-.552-1.077-.852-.11.114-.262.282-.42.438-.542.528-1.169.828-1.954.798-.749-.03-1.497.018-2.222-.246-1.29-.474-1.99-1.583-1.766-2.927.293-1.77.548-3.55.95-5.295.408-1.752 1.474-2.975 3.355-3.353a4.12 4.12 0 01.815-.084c1.553-.006 3.105-.006 4.657-.006.079 0 .152.012.256.024-.152.852-.304 1.685-.45 2.52-.348 1.924-.7 3.843-1.035 5.769-.03.18.042.401.133.563.232.414.95.702 1.425.624.176-2.045.585-4.048 1.016-6.04.384-1.763 1.474-2.998 3.367-3.376a4.12 4.12 0 01.815-.084c1.553-.006 3.105-.006 4.658-.006.066 0 .14.012.243.018-.091.522-.177 1.031-.268 1.535-.414 2.285-.834 4.57-1.248 6.855-.06.324.055.594.323.792.103.078.22.156.34.186.25.066.53.18.768.132.328-.066.206-.426.249-.654.475-2.579.932-5.158 1.388-7.743.067-.36.134-.725.207-1.103.098-.006.183-.018.274-.018 1.51 0 3.025-.006 4.535 0 .59.006 1.169.126 1.704.384.908.444 1.437 1.17 1.395 2.171-.031.84-.183 1.68-.323 2.513-.366 2.111-.749 4.222-1.126 6.327-.019.12-.03.24-.068.354-.023.06-.103.138-.157.138-.755.036-1.492.03-2.265.03zM39.291 3.464a.917.917 0 00-.147-.024c-.766 0-1.54-.006-2.306 0-.768.006-1.346.468-1.485 1.206-.3 1.574-.584 3.152-.853 4.731-.134.798.268 1.248 1.108 1.284.335.011.67.006 1.005 0 .919-.006 1.467-.474 1.63-1.367.25-1.392.512-2.784.767-4.169.086-.545.177-1.098.28-1.661zm10.172.006c-.085-.018-.116-.03-.14-.03-.773 0-1.54-.012-2.313 0-.78.011-1.358.474-1.498 1.224a422.148 422.148 0 00-.852 4.731c-.122.714.195 1.14.925 1.23.402.048.81.03 1.212.03.883-.006 1.442-.474 1.594-1.332l.713-3.85c.122-.654.237-1.32.359-2.003zm-21.038 9.518c-.213 0-.384.006-.554 0-.84-.018-1.687.018-2.52-.072-1.26-.144-2.137-.924-2.387-1.997-.14-.588-.06-1.17.043-1.751.28-1.548.548-3.1.846-4.648.36-1.872 1.826-3.215 3.769-3.365 1.138-.09 2.288-.054 3.433-.066.608-.006 1.211 0 1.868 0-.079.474-.152.924-.23 1.367-.44 2.453-.884 4.906-1.328 7.36-.28 1.54-.536 3.082-.852 4.617-.427 2.093-2.045 3.058-3.707 3.293-.402.053-.81.06-1.212.06-1.4.005-2.8 0-4.2 0-.018 0-.037-.006-.08-.018.006-.036 0-.072.019-.102.39-.69.773-1.38 1.181-2.057.06-.096.243-.162.371-.162 1.23-.013 2.453-.006 3.683-.006.938 0 1.419-.378 1.62-1.284.097-.377.151-.737.237-1.17zm-.926-2.363v.036c.317 0 .633-.024.944.006.31.03.42-.096.469-.384.322-1.883.657-3.766.992-5.65.128-.707-.237-1.17-.974-1.193-.408-.012-.81-.006-1.217-.006-.816.012-1.37.474-1.516 1.271-.158.864-.323 1.722-.475 2.586-.134.773-.286 1.546-.377 2.326-.068.558.243.924.82.99.44.054.89.018 1.334.018zm44.044-9.53c-.214 1.194-.427 2.345-.634 3.502a669.492 669.492 0 00-.864 4.793c-.116.641.158 1.043.786 1.247.078.024.17.174.158.252-.11.69-.238 1.373-.366 2.099-1.077-.066-2.014-.39-2.684-1.301-.177.185-.329.36-.493.52-.536.517-1.15.829-1.93.787-.675-.036-1.352.03-2.015-.175-1.492-.455-2.24-1.612-1.978-3.124.298-1.739.553-3.484.95-5.206.376-1.619 1.35-2.8 3.055-3.25a4.67 4.67 0 011.078-.15c1.583-.018 3.165-.006 4.742-.006.048 0 .104.006.195.012zm-2.8 2.369c-.123-.012-.196-.024-.274-.024-.731 0-1.462-.006-2.192 0-.755.011-1.333.456-1.467 1.182a319.26 319.26 0 00-.87 4.881c-.104.612.213 1.032.845 1.11.408.054.828.042 1.242.042.95 0 1.498-.48 1.662-1.404.268-1.511.554-3.016.828-4.522.079-.413.146-.827.225-1.265zM0 0h18v18H0z">
+                        </path>
+                        <path class="svg_g" fill="#FFF"
+                            d="M11.585 3.752c.371-.004.74 0 1.143 0-.049.297-.093.58-.142.86-.268 1.541-.54 3.084-.811 4.626-.171.968-.328 1.937-.522 2.903-.261 1.316-1.251 1.922-2.268 2.07a5.588 5.588 0 01-.742.037c-.856.004-1.713 0-2.57 0a.151.151 0 01-.048-.012c.004-.021 0-.045.01-.063.24-.434.474-.867.724-1.293.037-.06.149-.102.227-.102.753-.008 1.501-.004 2.254-.004.573 0 .867-.237.99-.807.06-.237.093-.463.146-.735-.13 0-.235.004-.34 0-.514-.013-1.032.01-1.542-.046-.772-.09-1.308-.58-1.461-1.255-.085-.37-.036-.736.027-1.102.171-.972.336-1.949.518-2.92.22-1.177 1.118-2.022 2.306-2.115.697-.057 1.4-.035 2.1-.042zM9.91 5.225l-.373.001c-.498.008-.837.297-.927.8-.097.542-.197 1.081-.29 1.624-.082.487-.175.973-.23 1.463-.042.35.147.66.501.66h1.393c.177 0 .258-.061.288-.241.197-1.184.402-2.368.606-3.552.08-.444-.145-.736-.596-.75-.249-.008-.495-.004-.745-.004z">
+                        </path>
+                    </g>
+                </svg>
+            </b>
+            <h1 class="bg-[#1B1B1B]  rounded-[20px] text-[grey] mb-[20px] ">
+                <button class="p-[5px_9px]">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" class="bg-[#1B1B1B] w-[30vw] " placeholder="Search Artists,Songs and Playlists">
+
+                </button>
+            </h1>
+
+        </div>
+        <div class="flex mt-[18px] ml-[95px]">
+            <h1
+                class="text-[white] text-[13px] ml-[15px] bg-[#D3100B] hover:bg-[tomato] rounded-[30px] p-[8px_12px] mb-[20px]">
+                <a href="/" class="">Welcome Offer: 1 Month Trial @
+                    ₹1</a>
+            </h1>
+            <h1
+                class="text-[black] text-[13px] bg-[white] hover:bg-[#D3D3D4]  ml-[20px] mb-[20px]   rounded-[30px] p-[8px_8px]">
+                <a href="/" class="">Get Gaana Plus</a>
+            </h1>
+            <h1 class="pl-[20px] mt-[6px] ">
+                <svg width="32" height="24" viewBox="0 0 20 16">
+                    <g fill="white" fill-rule="evenodd">
+                        <g
+                            transform="translate(-1108 -117) translate(1089 58) translate(19 15) translate(0 43) translate(.5 1.5)">
+                            <rect class="svg_box" width="11" height="11" x="7.591" y="3.5" fill="white" stroke="#8E8E93"
+                                rx="5.5"></rect>
+                            <rect class="svg_box" width="11" height="11" x=".5" y=".5" fill="#FFF" stroke="#8E8E93"
+                                rx="5.5"></rect><text fill="#8E8E93" font-size="7" font-weight="500">
+                                <tspan x="3.5" y="9">A</tspan>
+                            </text><text fill="#8E8E93" font-size="5" font-weight="500">
+                                <tspan x="12" y="11.5">अ</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </svg>
+            </h1>
+            <h1 class="pl-[20px] mt-[6px]">
+                <svg width="22" height="22" viewBox="0 0 22 22">
+                    <g fill="white" fill-rule="evenodd">
+                        <g class="svg_color" opacity=".75">
+                            <path
+                                d="M1 12h2.333c.552 0 1-.448 1-1s-.448-1-1-1H1c-.552 0-1 .448-1 1s.448 1 1 1zM21 10h-2.333c-.553 0-1 .448-1 1s.447 1 1 1H21c.552 0 1-.448 1-1s-.448-1-1-1zM11 4.32c.552 0 1-.448 1-1V1c0-.552-.448-1-1-1s-1 .448-1 1v2.32c0 .552.448 1 1 1zM10 18.653V21c0 .552.448 1 1 1s1-.448 1-1v-2.347c0-.552-.448-1-1-1s-1 .448-1 1zM4.863 6.277c.39.392 1.022.395 1.414.006.392-.389.395-1.022.006-1.414l-1.64-1.654c-.389-.391-1.022-.394-1.414-.005-.392.388-.395 1.022-.006 1.414l1.64 1.653zM15.706 15.706c-.39.39-.39 1.024 0 1.414l1.654 1.654c.39.39 1.023.39 1.414 0 .39-.391.39-1.024 0-1.415l-1.654-1.653c-.39-.39-1.023-.39-1.414 0zM17.134 6.267l1.64-1.64c.39-.39.39-1.024 0-1.415-.39-.39-1.024-.39-1.415 0l-1.64 1.64c-.39.391-.39 1.024 0 1.415.391.39 1.024.39 1.415 0zM4.88 15.706l-1.654 1.653c-.39.39-.39 1.024 0 1.415.39.39 1.024.39 1.414 0l1.654-1.654c.39-.39.39-1.024 0-1.414-.39-.39-1.024-.39-1.414 0zM11.005 16.653c3.13 0 5.666-2.537 5.667-5.666 0-3.13-2.537-5.666-5.667-5.667-3.13 0-5.666 2.537-5.667 5.667.001 3.13 2.537 5.666 5.667 5.666zm0-9.333c2.025.004 3.663 1.642 3.667 3.667-.004 2.024-1.642 3.663-3.667 3.666-2.025-.003-3.663-1.642-3.667-3.666.004-2.025 1.642-3.663 3.667-3.667z"
+                                transform="translate(-1204 -24) translate(1203 23) translate(1 1)"></path>
+                        </g>
+                    </g>
+                </svg>
+            </h1>
+            <h1 class="text-[white] ml-[20px] mt-[6px] hover:text-[red]">
+                <a href="">
+                    Login/Sign Up
+                </a>
+            </h1>
+        </div>
+    </nav>
+
+    <div class="w-[100%] bg-[#D3100B] grid grid-cols-[61%_auto]  mt-[60px] py-[17px]">
+        <div class="flex text-[white]  mx-auto ">
+
+            <h2 class="hover:text-[grey]">All</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">Trending Songs</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">New Songs</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">Old Songs</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">Moods & Genres</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">Album</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">Radio</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">Podcast</h2>
+            <h2 class="pl-[20px] hover:text-[grey]">My Music</h2>
+        </div>
+
+    </div>
+    <section class="bg-[black] h-[100vh] overflow-y-auto no-scrollbar  w-[100%]  mt-[120px] ">
+
+        <div class="w-[90%] mx-auto h-[100%]     pt-[10px]">
+
+            <div class=" h-[410px] bg-[] flex pt-[10px] no-scrollbar overflow-x-auto">
+                ////////////
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img class="w-[400px] h-[400px] pl-[]" alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                /////////////
+                
+
+            </div>
+            <h1
+                class="bg-[#D3100B] mt-[10px] p-[10px_12px] border-b-[2px] border-[white]  text-[white] font-bold text-[28px]">
+                Trending Songs
+            </h1>
+            <div class=" h-[300px] bg-[] flex pt-[10px] no-scrollbar overflow-x-auto">
+                <img class="w-[200px] h-[200px] hover:translate-y-6  border-[3px]  border-[white]" src="covers/1.jpg"
+                    alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/2.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/3.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/4.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/5.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/6.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/7.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/8.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/9.jpg" alt="">
+                <img class="w-[200px] h-[200px] border-[3px] hover:translate-y-6 border-[white] pl-[]"
+                    src="covers/10.jpg" alt="">
+
+            </div>
+            <h1
+                class="bg-[#D3100B] mt-[10px] p-[10px_12px] border-b-[2px] border-[white]  text-[white] font-bold text-[28px]">
+                New Releases
+            </h1>
+            <div class=" h-[300px] bg-[] flex pt-[10px] no-scrollbar overflow-x-auto">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[]" src="covers/1.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/2.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/3.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/4.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/5.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/6.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/7.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/8.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/9.jpg" alt="">
+                <img class="w-[200px] h-[200px] hover:skew-x-12 hover:scale-75 pl-[10px]" src="covers/10.jpg" alt="">
+
+            </div>
+            <h1
+                class="bg-[#D3100B] mt-[10px] p-[10px_12px] border-b-[2px] border-[white]  text-[white] font-bold text-[28px]">
+                Featured Artists
+            </h1>
+            <div class=" h-[300px] bg-[] flex pt-[10px] no-scrollbar overflow-x-auto">
+                <img class="w-[200px] h-[200px] pl-[] rounded-[100px]" src="Artists/size_m.jpg" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="Artists/size_m_1516104380.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="Artists/size_m_1516185303.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="Artists/size_m_1516276549.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="Artists/size_m_1516707336.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="Artists/size_m_1516796833.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="Artists/size_m_1638898900.webp" alt="">
+
+            </div>
+            <h1
+                class="bg-[#D3100B] mt-[10px] p-[10px_12px] border-b-[2px] border-[white]  text-[white] font-bold text-[28px]">
+                Radio
+            </h1>
+            <div class=" h-[300px] bg-[] flex pt-[10px] no-scrollbar overflow-x-auto">
+                <img class="w-[200px] h-[200px] pl-[] rounded-[100px]" src="radio/size_m_1540298212.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="radio/size_m_1643616612.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="radio/size_m_1643617195.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="radio/size_m_1643616680.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="radio/size_m_1643617195.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="radio/size_m_1643620296.webp" alt="">
+                <img class="w-[200px] h-[200px] rounded-[100px] pl-[10px]" src="radio/size_m_1643786917.webp" alt="">
+
+            </div>
+            <h1
+                class="bg-[#D3100B] mt-[10px] p-[10px_12px] border-b-[2px] border-[white]  text-[white] font-bold text-[28px]">
+                Mehfil-E-Ghazal
+            </h1>
+            <div class=" h-[300px] bg-[] flex pt-[10px] no-scrollbar overflow-x-auto">
+                <img class="rounded-[10px] w-[200px] h-[200px] pl-[] " src="/ghazal/size_m_1515074408.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="/ghazal/size_m_1515074406.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611412.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611424.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611639.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611731.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611852.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611852.webp" alt="">
+                <img class="rounded-[10px] w-[200px] h-[200px]  pl-[10px]" src="ghazal/size_m_1654611731.webp" alt="">
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section class="w-[100%] h-[100%] bg-[#282B2F]">
+        <div class="w-[90%] mx-auto">
+
+            <h1 class="font-bold text-[#FFFFFF]  text-[37px] text-center pt-[50px]">Bas Bajna Chahiye Gaana</h1>
+            <p class="text-[grey] text-[15px] font-bold text-center  pt-[20px]">
+                Gaana is the one-stop solution for all your music needs. Gaana offers you free, unlimited access to over
+                30
+            </p>
+            <p class="text-[grey] text-center font-bold text-[15px] pt-[7px]">
+                million Hindi Songs, Bollywood Music, English MP3 songs, Regional Music & Mirchi Play.
+            </p>
+            <br>
+            <hr>
+            <div class=" text-center py-[20px]">
+
+                <i class="fa-brands fa-facebook text-[#375083]   text-[60px]"></i>
+                <i class="fa-brands fa-twitter text-[#0892C8] pl-[20px] text-[60px]"></i>
+            </div>
+            <hr>
+            <div class="flex  w-[50%] mx-auto text-[#FFFFFF] py-[40px] text-[18px] ">
+                <h1 class="">Advertise on Gaana.com
+                </h1>
+                <h1 class="pl-[20px]">Terms of Use</h1>
+                <h1 class="pl-[20px]">Privacy Policy</h1>
+                <h1 class="pl-[20px]">Partners</h1>
+                <h1 class="pl-[20px]">Sitemap</h1>
+                <h1 class="pl-[20px]">FAQ</h1>
+
+            </div>
+            <hr>
+            <h1 class="text-[#FFFFFF] font-bold text-[28px] pt-[20px] text-center ">
+                Quicklinks
+            </h1>
+            <div class="grid grid-cols-5 pt-[34px]">
+                <div>
+                    <h1 class="text-[#FFFFFF] text-[23px]">Albums</h1>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">English</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Hindi</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Telugu</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Punjabi</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Tamil</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Bhojpuri</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Haryanvi</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Bengali</h2>
+                </div>
+                <div>
+                    <h1 class="text-[#FFFFFF] text-[23px]">Genres</h1>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Bollywood Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Devotional Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Ghazals</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Bhajan</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Patriotic Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Kids Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Rock Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Disco Songs</h2>
+
+                </div>
+                <div>
+                    <h1 class="text-[#FFFFFF] text-[23px]">Artists</h1>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Arijit Singh</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Neha Kakkar</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Haryanvi</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Honey Singh</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Atif Aslam</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">A R Rahman</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Lata Mangeshkar</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Kishore Kumar</h2>
+
+                </div>
+                <div>
+                    <h1 class="text-[#FFFFFF] text-[23px]">New Release</h1>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">English Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Hindi Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Punjabi Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Tamil Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Telugu Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Kannada Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Haryanvi Songs</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Urdu Songs</h2>
+
+                </div>
+                <div>
+                    <h1 class="text-[#FFFFFF] text-[23px]">Podcasts</h1>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Story Podcasts</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">MD Motivation</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Motivation Podcasts</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">RJ Kartik Motivation</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Dua Lipa:At Your Service</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Choti Si Kahani</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">The Robin Sharma Mastery Sessions</h2>
+                    <h2 class="text-[grey] text-[18px] pt-[20px] font-bold">Raavn</h2>
+
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h1 class="text-[#FFFFFF] text-center text-[23px] mt-[13px] pb-[150px]">© Gamma Gaana Ltd. 2023, All Rights
+                Reserved</h1>
+
+        </div>
+
+    </section>
+    <footer class="absolute fixed flex bottom-[0px] w-[100vw] h-[80px] bg-[#1F2024]">
+        <div class="flex">
+
+            <img src="covers/4.jpg" class="w-[50px] p-[5px_4px] h-[70px]" alt="">
+            <h2 class=" text-[white] pl-[14px] font-bold pt-[20px]">Ik Varri aa</h2>
+            <i class="fa-regular fa-heart pl-[44px] pt-[20px] text-[30px] text-[#D3100B]"></i>
+            <!-- <i class="fa-solid fa-heart"></i> full heart -->
+            <i class="fa-solid fa-ellipsis-vertical text-[#FFFFFF] text-[28px] pl-[24px] pt-[20px]"></i>
+        </div>
+        <div class="w-[28%] mx-auto pt-[20px]">
+
+            <i class="fa-solid fa-circle-left text-[35px] text-[#FFFFFF]"></i>
+            <i class="fa-solid fa-circle-play  text-[#FFFFFF] text-[40px] p-[0px_10px]"></i>
+            <i class="fa-solid fa-circle-right text-[35px] text-[#FFFFFF]"></i>
+        </div>
+        <div class="flex pr-[20px] pt-[20px] mb-[20px]">
+            <i
+                class="fa-solid fa-volume-high text-[#FFFFFF] border-[2px] border-[#FFFFFF] rounded-[50px] text-[26px] p-[2px_3px]  mr-[10px]"></i>
+            <h2 class=" border-[2px] text-[15px] text-[#FFFFFF] border-[red] rounded-[20px] p-[7px_10px]">Audio:High
+            </h2>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

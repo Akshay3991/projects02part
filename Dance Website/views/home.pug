@@ -1,0 +1,42 @@
+extends base.pug
+
+
+block scripts 
+  script(src='../static/index.js')
+block style 
+  style 
+    include ../static/style.css
+block content 
+  section#introsection 
+    div Welcome to Akki's Dance Academy
+    div.small Eat Sleep Dance Repeat 
+  h2 Our mission 
+  section#mission 
+    div.card
+      h3 Dance Perfection 
+      div.card-box
+        div.card-img
+        img(src="/static/pos4.png")
+        div.card-content
+          p This is the best dance academy of the universe
+    div.card
+      h3 Dance the way you like
+      div.card-box
+        div.card-img
+        img(src="/static/pos4.png")
+        div.card-content
+          p This is the best dance academy of the universe
+
+    div.card
+      h3 Expert Teaching
+      div.card-box
+        div.card-img
+        img(src="/static/pos4.png")
+        div.card-content
+          p This is the best dance academy of the universe
+  section#sponsers
+    h2 Our sponsers
+    img(src="/static/sp1.png" alt="sponser Image" class="spimage")
+    img(src="/static/sp2.png" alt="sponser Image" class="spimage")
+    img(src="/static/sp3.png" alt="sponser Image" class="spimage")
+    img(src="/static/sp4.png" alt="sponser Image" class="spimage")

@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Akki Dance Academy
+  block scripts
+    script(src='../static/index.js')
+  block style
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul 
+        div#logo
+          img(src="/static/pos1.png")
+          |ADA
+        li #[a(href="/") HOME ]  
+        li #[a(href="/") ABOUT] 
+        li #[a(href="/") SERVICES ] 
+        li #[a(href="/") OUR SPONSERS] 
+        li #[a(href="/contact") CONTACT US] 
+
+  block content
+  footer#footer
+    |copyright &copy 2023 AkkiDanceAcademy.com|All rights reserved

@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Borel&family=Caprasimo&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tilt+Prism&family=Vina+Sans&display=swap');
+
+/* 
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Barriecito', cursive;
+        font-family: 'Borel', cursive;
+         */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(187, 175, 175); */
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navbar-height: 99px;
+}
+
+#navbar {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+
+
+
+
+
+/* navigation bar logo and image */
+
+#logo i {
+    font-size: 60px;
+    margin: 3px 7px;
+    float: right;
+    color: rgb(237, 9, 9);
+    border: 6px solid rgb(230, 6, 107);
+    /* box-shadow: 4px grey; */
+}
+
+#navbar::before {
+    background: rgb(237, 236, 235);
+    content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-attachment: fixed;
+}
+
+/* navigation bar list styling */
+#navbar ul {
+    /* text-decoration-style: none; */
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+#navbar ul a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+#navbar ul a:hover {
+
+    color: rgb(15, 2, 2);
+    background-color: coral;
+
+}
+
+/* home section */
+#des{
+}
+.main {
+    background-color: aliceblue;
+    width: 800px;
+    margin-top: 100px;
+
+    height: 1000px;
+
+}
+
+#home::before {
+    /* background: url('image.html/food3.jpg') no-repeat center center/cover; */
+    content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1100px;
+    z-index: -1;
+    /* opacity: 0.6; */
+    background-color: rgb(237, 9, 9);
+}
+
+.quote-section {
+    padding: 63px;
+    margin-left: 0px;
+    margin-top: 40px;
+
+}
+
+.quote-section h1 {
+    font-weight: bolder;
+    font-size: 43px;
+    color: red;
+}
+
+.quote-section h3 {
+    font-weight: bold;
+    font-size: 33px;
+    font-family: 'Borel', cursive;
+}
+
+.findfood {
+    height: 62px;
+    position: relative;
+    /* background-color: black; */
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.find {
+    font-weight: bold;
+    padding: 12px;
+    font-size: 24px;
+    border: none;
+    background: none;
+}
+
+.locate {
+    position: absolute;
+    padding: 23px;
+    background: none;
+    font-weight: bold;
+    border: none;
+}
+
+.btn1 {
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(237, 9, 9);
+    padding: 12px;
+    font-size: 34px;
+    border: none;
+    /* background: none; */
+}
+
+btn1:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.para01 {
+    color: rgb(237, 9, 9);
+    font-weight: bold;
+    font-size: 33px;
+    padding: 20px 63px;
+    font-family: 'borel', 'cursive';
+}
+
+.para02 {
+    color: rgb(20, 3, 81);
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'borel', 'cursive';
+    padding: 20px 63px;
+}
+
+.para p {
+    padding: 0px 63px;
+    font-family: 'borel', 'cursive';
+}
+
+.btn {
+    padding: 7px 20px;
+    border: 3px solid rgb(230, 6, 107);
+    background-color: rgb(237, 9, 9);
+    color: azure;
+    margin: 17px;
+    font: 1.5rem;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    /* padding: 7px 20px; */
+    border: 3px solid rgb(236, 240, 241);
+    background-color: rgb(14, 1, 1);
+    /* color: azure; */
+    /* margin: 17px; */
+    font: 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* services section */
+#services-container {
+    background-color: rgba(237, 9, 9,0.3);
+}
+
+.center {
+    color: rgb(3, 3, 56);
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Borel', cursive;
+    padding: 10px 15px;
+
+}
+
+.h-secondary {
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px tomato solid;
+    padding: 34px;
+    margin: 4px 7px;
+    border: none;
+    background-color: aliceblue;
+}
+
+#services .box i{
+    color: red;
+    font-size: 100px;
+    width: 156px;
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+.box p{
+    color: grey;
+}
+/* imp section */
+#imp{
+    position: relative;
+    height: 600px;
+    background-color: aliceblue;
+}
+#imp .phone1{
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    top: 0px;
+    right: 400px;
+}
+#imp .phone2{
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    bottom: 0px;
+    right: 150px;
+}
+#imp h1{
+    color: rgb(3, 3, 61);
+    font-weight: bold;
+    font-size: 27px;
+    padding-top: 194px;
+    font-family: 'borel','cursive';
+    padding-left: 95px;
+
+}
+#imp p{
+    padding: 34px 95px;
+    width: 400px;
+    font-family: 'borel','cursive';
+    font-weight: bold;
+    font-size: 23px;
+    color: grey;
+}
+
+#imp button{
+    margin: 12px;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
+}
+
+#imp i {
+    font-size: 64px;
+
+}
+
+/* About section */
+#about p{
+    color: grey;
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Borel', cursive;
+    padding: 10px 15px;
+}
+#about::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: rgba(183, 11, 11, 0.3);
+    height: 65%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* footer */
+
+
+
+footer {
+    position: relative;
+    /* z-index: -1; */
+    background: rgb(30, 27, 27);
+    color: white;
+    padding: 9px 20px;
+}
+
+.related {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#company {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    background:rgb(31, 32, 32);
+
+}
+
+.related h2 {
+    padding: 32px 34px;
+
+}
+
+#company a {
+    text-decoration: none;
+}
+
+#contact {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    background:rgb(31, 32, 32);
+}
+
+
+
+#legal {
+    margin: 12px;
+    display: flex;
+    background:rgb(31, 32, 32);
+    flex-direction: column;
+}
+
+
+
+.brandbtn {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.brandbtn button{
+    margin: 12px;
+    color: rgb(239, 235, 235);
+    background: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.brandbtn i{
+    font-size: 65px;
+}
+#footerlast {
+    display: flex;
+}
+.footcopy{
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Borel', cursive;
+    padding: 10px 15px;
+
+}
+
+#symbol {
+    position: relative;
+    justify-content: center;
+    left: 500px;
+    font-size: 60px;
+}
+
+.logo {
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    align-items: center;
+}
+
+#icons {
+    position: absolute;
+    right: 8px;
+}
+
+#icons i {
+    font-size: 60px;
+    padding: 10px;
+
+}
+
+/* sign-up */
+#sign-up::before {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    /* background: url('image.html/food3.jpg') center no-repeat; */
+    background-color: rgb(249, 2, 2);
+    /* opacity: 0.3; */
+    background-size: cover;
+}
+
+#sign {
+    /* z-index: -1; */
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 800px;
+    height: 900px;
+    background-color: aliceblue;
+}
+
+#sign h1 {
+    background-color: rgb(237, 9, 9);
+    font-weight: bold;
+
+}
+
+#sign form {
+    border: 3px solid rgb(230, 6, 107);
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sign input {
+    margin: 23px;
+    padding: 12px;
+    border: 3px solid rgb(237, 9, 9);
+}
+
+/* login */
+#login::before {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    /* background: url('image.html/food3.jpg') center no-repeat; */
+    background-color: rgb(249, 2, 2);
+    /* opacity: 0.3; */
+    background-size: cover;
+}
+
+#log {
+    /* z-index: -1; */
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 800px;
+    height: 490px;
+    background-color: whitesmoke;
+}
+
+#log h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Borel', cursive;
+    padding: 10px 15px;
+    background-color: rgb(237, 9, 9);
+    font-weight: bold;
+
+}
+
+#log form {
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+#log input {
+    margin: 23px;
+    padding: 12px;
+    border: 3px solid rgb(237, 9, 9);
+}
+
+/* location */
+#location::before {
+    z-index: -1;
+    width: 100vw;
+    height: 2000px;
+    content: "";
+    position: absolute;
+    background: url('image.html/food3.jpg') center no-repeat;
+    opacity: 0.3;
+    background-size: cover;
+}
+
+#map {
+    z-index: -1;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 1000px;
+    height: 1000px;
+    border: 5px solid rgb(237, 9, 9);
+    background-color: aliceblue;
+}
+
+#map iframe {
+    width: 1000px;
+    height: 1000px;
+}
